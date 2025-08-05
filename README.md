@@ -17,6 +17,9 @@ AgentRun automatically installs and uninstalls dependencies with optional cachin
 
 - [Get started in minutes](#getting-started)
 
+> [!NOTE]
+> Looking for a state of the art RAG API? Check out [ColiVara](https://github.com/tjmlabs/ColiVara), also from us.
+
 ## Why?
 
 Giving code execution ability to LLMs is a massive upgrade. Consider the following user query: `what is 12345 * 54321?` or even something more ambitious like `what is the average daily move of Apple stock during the last week?`? With code execution it is possible for LLMs to answer both accurately by executing code.
@@ -324,9 +327,10 @@ print(result)
 
 ## Benchmarks
 
-AgentRun Median execution time is <200ms without dependencies. Dependency installing is usually the bottleneck and depends on the size of package and if the package has many dependencies as well as caching.
+AgentRun Median execution time is <200ms without dependencies and ~400ms with 1 "average" dependency like requests. Dependency installing is usually the bottleneck and depends on the size of package and if the package has many dependencies as well as caching.
 
-![benchmarks](<https://pbs.twimg.com/media/GLTDKkLW0AA1jLe?format=png>)
+![benchmarks](<https://pbs.twimg.com/media/GabL6e0XgAA9Two?format=png>)
+
 
 
 ## Development
